@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estudio-violeta.netlify.app/sitemap.xml

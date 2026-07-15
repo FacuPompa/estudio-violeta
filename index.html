@@ -10,7 +10,13 @@
   <meta property="og:locale" content="es_AR">
   <meta property="og:title" content="Estudio Violeta | Ideas que toman forma en papel">
   <meta property="og:description" content="Papelería y productos personalizados para cumpleaños, eventos, emprendimientos y regalos en San Luis.">
-  <!-- Agregar og:image, og:url y canonical cuando exista dominio y una foto autorizada. -->
+  <meta property="og:url" content="https://estudio-violeta.netlify.app/">
+  <meta property="og:image" content="https://estudio-violeta.netlify.app/assets/centro-mesa-grande.webp">
+  <meta property="og:image:alt" content="Centro de mesa personalizado realizado por Estudio Violeta">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://estudio-violeta.netlify.app/">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,15 +28,34 @@
     "@type": "LocalBusiness",
     "name": "Estudio Violeta",
     "description": "Papelería personalizada, souvenirs e impresión para cumpleaños, eventos, emprendimientos y regalos.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Caseros 955",
-      "addressLocality": "San Luis",
-      "addressRegion": "San Luis",
-      "addressCountry": "AR"
-    },
+    "url": "https://estudio-violeta.netlify.app/",
+    "logo": "https://estudio-violeta.netlify.app/assets/logo-estudio-violeta.png",
+    "image": "https://estudio-violeta.netlify.app/assets/centro-mesa-grande.webp",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Caseros 955",
+        "addressLocality": "San Luis",
+        "addressRegion": "San Luis",
+        "addressCountry": "AR"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Barrio Pozo del Carril, casa 18",
+        "addressLocality": "La Punta",
+        "addressRegion": "San Luis",
+        "addressCountry": "AR"
+      }
+    ],
     "telephone": "+54 9 266 506-4431",
     "areaServed": ["San Luis", "La Punta"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:30",
+      "closes": "17:30"
+    },
+    "paymentAccepted": "Efectivo, transferencia, GoCuotas, tarjeta de crédito y tarjeta de débito",
     "sameAs": ["https://www.instagram.com/estudio.violeta_/"]
   }
   </script>
@@ -41,7 +66,7 @@
   <header class="site-header" data-header>
     <div class="shell nav-wrap">
       <a class="brand" href="#inicio" aria-label="Estudio Violeta, ir al inicio">
-        <span class="brand-mark" aria-hidden="true">V</span>
+        <img class="brand-logo" src="assets/logo-estudio-violeta.png" width="512" height="512" alt="">
         <span>Estudio Violeta</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
@@ -74,26 +99,23 @@
           </div>
           <ul class="hero-facts" aria-label="Datos principales">
             <li>Atención en San Luis y La Punta</li>
-            <li>Envíos a domicilio</li>
+            <li>Envíos coordinados previamente</li>
           </ul>
         </div>
 
-        <!-- Demo editable: reemplazar estas composiciones por 3 a 5 fotos reales autorizadas. -->
-        <div class="paper-collage reveal" aria-label="Espacio editorial para mostrar trabajos de Estudio Violeta">
+        <div class="paper-collage reveal" aria-label="Trabajos realizados por Estudio Violeta">
           <div class="photo-frame frame-main">
             <span class="frame-tag">celebrar</span>
-            <div class="paper-art art-invite" aria-hidden="true">
-              <span class="paper-card"></span><span class="paper-flower flower-one">✦</span><span class="paper-flower flower-two">✿</span>
-            </div>
-            <p>Invitaciones y detalles</p>
+            <img class="product-photo" src="assets/centro-mesa-grande.webp" width="512" height="512" alt="Centro de mesa infantil personalizado" fetchpriority="high" decoding="async">
+            <p>Centros de mesa personalizados</p>
           </div>
           <div class="photo-frame frame-top">
-            <div class="paper-art art-stickers" aria-hidden="true"><span>V</span><span>gracias</span><span>♥</span></div>
-            <p>Stickers con identidad</p>
+            <img class="product-photo" src="assets/topper-cupcakes.webp" width="512" height="512" alt="Toppers circulares personalizados para cupcakes" decoding="async">
+            <p>Toppers para cupcakes</p>
           </div>
           <div class="photo-frame frame-bottom">
-            <div class="paper-art art-gift" aria-hidden="true"><span class="gift-box"></span><span class="gift-ribbon"></span></div>
-            <p>Regalos personalizados</p>
+            <img class="product-photo" src="assets/tarjeta-lapicera.webp" width="512" height="512" alt="Tarjeta personalizada para regalar con lapicera" decoding="async">
+            <p>Detalles para regalar</p>
           </div>
           <span class="collage-note">papel · color · detalle</span>
         </div>
@@ -104,9 +126,9 @@
     <section class="trust-strip" aria-label="Por qué elegir Estudio Violeta">
       <div class="shell trust-grid">
         <p><strong>49</strong><span>productos publicados</span></p>
-        <p><strong>4</strong><span>ocasiones para crear</span></p>
-        <p><strong>Dirección</strong><span>publicada en Caseros 955</span></p>
-        <p><strong>A medida</strong><span>consultas por WhatsApp</span></p>
+        <p><strong>50%</strong><span>de seña para comenzar</span></p>
+        <p><strong>2</strong><span>puntos en San Luis y La Punta</span></p>
+        <p><strong>5</strong><span>formas de pago disponibles</span></p>
       </div>
     </section>
 
@@ -166,23 +188,22 @@
           <p>Acá pueden vivir las fotos reales del estudio: materiales, terminaciones y pedidos completos, sin perder el orden editorial.</p>
         </div>
 
-        <!-- Demo editable: cada bloque se reemplaza por una foto real autorizada manteniendo figcaption. -->
         <div class="portfolio-grid">
           <figure class="work work-large reveal">
-            <div class="work-art work-art-coral" aria-hidden="true"><span class="poster">TU<br>FIESTA</span><span class="mini-card">✦</span><span class="confetti">• ✦ •</span></div>
-            <figcaption><span>01</span><strong>Mesa coordinada</strong><small>Cumpleaños</small></figcaption>
+            <img class="work-photo" src="assets/bolsas-golosineras.webp" width="512" height="512" alt="Bolsas golosineras personalizadas en papel fotográfico" loading="lazy" decoding="async">
+            <figcaption><span>01</span><strong>Sorpresas listas para celebrar</strong><small>Bolsas golosineras</small></figcaption>
           </figure>
           <figure class="work reveal">
-            <div class="work-art work-art-violet" aria-hidden="true"><span class="sticker-sheet">V<br><i>gracias</i><br>♥</span></div>
-            <figcaption><span>02</span><strong>Identidad que se pega</strong><small>Emprendimientos</small></figcaption>
+            <img class="work-photo" src="assets/libro-personalizado.webp" width="512" height="512" alt="Libro anillado y personalizado Mi primer año" loading="lazy" decoding="async">
+            <figcaption><span>02</span><strong>Historias hechas para guardar</strong><small>Libros personalizados</small></figcaption>
           </figure>
           <figure class="work reveal">
-            <div class="work-art work-art-yellow" aria-hidden="true"><span class="photo-strip">■<br>■<br>■</span><span class="album">RECUERDOS</span></div>
-            <figcaption><span>03</span><strong>Fotos para volver a mirar</strong><small>Regalos</small></figcaption>
+            <img class="work-photo" src="assets/anotadores-anillados.webp" width="512" height="512" alt="Anotadores pequeños anillados con tapas ilustradas" loading="lazy" decoding="async">
+            <figcaption><span>03</span><strong>Ideas que también se anotan</strong><small>Anotadores</small></figcaption>
           </figure>
           <figure class="work work-wide reveal">
-            <div class="work-art work-art-mint" aria-hidden="true"><span class="name-tag">nombre</span><span class="round-tag">♥</span><span class="long-tag">HECHO PARA VOS</span></div>
-            <figcaption><span>04</span><strong>Pequeños detalles, una misma idea</strong><small>Souvenirs</small></figcaption>
+            <img class="work-photo work-photo-contain" src="assets/calendario-souvenir.webp" width="512" height="512" alt="Calendarios souvenir impresos en papel fotográfico" loading="lazy" decoding="async">
+            <figcaption><span>04</span><strong>Un recuerdo pensado para acompañar</strong><small>Calendarios</small></figcaption>
           </figure>
         </div>
         <div class="portfolio-link reveal">
@@ -192,7 +213,6 @@
       </div>
     </section>
 
-    <!-- Supuesto editable: proceso orientativo para trabajos por encargo; confirmar flujo real con el negocio. -->
     <section class="section process" id="proceso">
       <div class="shell process-grid">
         <div class="process-intro reveal">
@@ -204,8 +224,8 @@
         </div>
         <ol class="process-list">
           <li class="reveal"><span>01</span><div><h3>Contanos qué necesitás</h3><p>Escribinos por WhatsApp con la ocasión, producto o idea que tenés en mente.</p></div></li>
-          <li class="reveal"><span>02</span><div><h3>Definimos los detalles</h3><p>Conversamos sobre texto, colores, cantidad y los datos necesarios para cotizar.</p></div></li>
-          <li class="reveal"><span>03</span><div><h3>Coordinamos tu pedido</h3><p>Una vez acordado el trabajo, coordinamos los próximos pasos directamente con vos.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Definimos y cotizamos</h3><p>Conversamos sobre texto, colores, cantidad y los datos necesarios para preparar el presupuesto.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Confirmamos con la seña</h3><p>Para iniciar el trabajo se abona una seña del 50%. Cuando esté listo, coordinamos la entrega o el retiro.</p></div></li>
         </ol>
       </div>
     </section>
@@ -237,7 +257,11 @@
           <div class="faq-heading reveal"><p class="eyebrow">Antes de escribirnos</p><h2>Preguntas frecuentes</h2></div>
           <details class="reveal"><summary>¿Cómo pido un presupuesto?</summary><p>Escribinos por WhatsApp y contanos qué producto necesitás, para qué ocasión y la cantidad estimada. Con esos datos podemos orientar mejor la consulta.</p></details>
           <details class="reveal"><summary>¿Los productos tienen un precio fijo?</summary><p>Los trabajos personalizados se consultan según cada pedido. En Compre San Luis, la mayoría de los productos publicados figura con precio a convenir.</p></details>
-          <details class="reveal"><summary>¿Hacen envíos?</summary><p>Estudio Violeta declara realizar envíos a domicilio y atender San Luis y La Punta. Consultá por WhatsApp el alcance para tu ubicación.</p></details>
+          <details class="reveal"><summary>¿Cómo se confirma un pedido?</summary><p>Para comenzar el trabajo se solicita una seña del 50% del presupuesto.</p></details>
+          <details class="reveal"><summary>¿Qué medios de pago aceptan?</summary><p>Podés pagar en efectivo, por transferencia, con GoCuotas, tarjeta de crédito o tarjeta de débito.</p></details>
+          <details class="reveal"><summary>¿Cuánto tiempo guardan un pedido terminado?</summary><p>Una vez informado que está listo, tenés 10 días para retirarlo. Pasado ese plazo, se cobra un recargo por cada día adicional.</p></details>
+          <details class="reveal"><summary>¿Hacen envíos?</summary><p>Sí. Los envíos a domicilio, su alcance y la modalidad de entrega se coordinan previamente por WhatsApp.</p></details>
+          <details class="reveal"><summary>¿Cuándo atienden?</summary><p>De lunes a viernes de 09:30 a 17:30. Sábados, domingos y feriados permanece cerrado.</p></details>
           <details class="reveal"><summary>¿Cuánto demora un pedido?</summary><p>El tiempo puede depender del producto y la personalización. Consultá disponibilidad antes de definir la fecha de tu evento.</p></details>
         </div>
       </div>
@@ -261,11 +285,12 @@
         </div>
         <address class="contact-card reveal">
           <p class="contact-label">Encontranos / escribinos</p>
-          <div class="contact-row"><span aria-hidden="true">⌖</span><div><small>Dirección publicada</small><strong>Caseros 955</strong><p>San Luis, Argentina</p></div></div>
+          <div class="contact-row"><span aria-hidden="true">1</span><div><small>San Luis capital</small><strong>Caseros 955</strong></div></div>
+          <div class="contact-row"><span aria-hidden="true">2</span><div><small>La Punta · coordinar previamente</small><strong>Barrio Pozo del Carril, casa 18</strong></div></div>
           <div class="contact-row"><span aria-hidden="true">↗</span><div><small>WhatsApp</small><a href="https://wa.me/5492665064431" target="_blank" rel="noopener">+54 9 266 506-4431</a></div></div>
           <div class="contact-row"><span aria-hidden="true">@</span><div><small>Instagram</small><a href="https://www.instagram.com/estudio.violeta_/" target="_blank" rel="noopener">@estudio.violeta_</a></div></div>
-          <div class="contact-row"><span aria-hidden="true">◷</span><div><small>Horarios</small><strong>Consultá antes de acercarte</strong></div></div>
-          <p class="contact-note">Atención informada para San Luis y La Punta · Envíos a domicilio sujetos a coordinación.</p>
+          <div class="contact-row"><span aria-hidden="true">◷</span><div><small>Horarios</small><strong>Lunes a viernes · 09:30 a 17:30</strong><p>Sábados, domingos y feriados cerrado</p></div></div>
+          <p class="contact-note">Atención en La Punta y envíos a domicilio coordinados previamente.</p>
         </address>
       </div>
     </section>
@@ -273,9 +298,9 @@
 
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div><a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true">V</span><span>Estudio Violeta</span></a><p>Papelería personalizada, souvenirs e impresión en San Luis.</p></div>
+      <div><a class="brand brand-footer" href="#inicio"><img class="brand-logo" src="assets/logo-estudio-violeta.png" width="512" height="512" alt=""><span>Estudio Violeta</span></a><p>Papelería personalizada, souvenirs e impresión en San Luis.</p></div>
       <div class="footer-links"><a href="#ocasiones">Qué hacemos</a><a href="#proceso">Cómo pedir</a><a href="https://compre.sanluis.gov.ar/empresa/estudiovioleta" target="_blank" rel="noopener">Tienda online ↗</a></div>
-      <div class="footer-meta"><p>Caseros 955 · San Luis</p><p><a href="tel:+542665064431">266 506-4431</a></p><p>© <span data-year></span> Estudio Violeta</p></div>
+      <div class="footer-meta"><p>Caseros 955 · San Luis</p><p>Pozo del Carril, casa 18 · La Punta</p><p><a href="tel:+542665064431">266 506-4431</a></p><p>© <span data-year></span> Estudio Violeta</p></div>
     </div>
   </footer>
 

@@ -24,6 +24,12 @@
     if (event.key === 'Escape') closeNav();
   });
 
+  const desktopViewport = window.matchMedia('(min-width: 981px)');
+  const closeNavOnDesktop = (event) => {
+    if (event.matches) closeNav();
+  };
+  desktopViewport.addEventListener?.('change', closeNavOnDesktop);
+
   const setHeaderState = () => header?.classList.toggle('is-scrolled', window.scrollY > 12);
   setHeaderState();
   window.addEventListener('scroll', setHeaderState, { passive: true });

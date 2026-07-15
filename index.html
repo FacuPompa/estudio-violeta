@@ -10,10 +10,15 @@
   <meta property="og:locale" content="es_AR">
   <meta property="og:title" content="Estudio Violeta | Ideas que toman forma en papel">
   <meta property="og:description" content="Papelería y productos personalizados para cumpleaños, eventos, emprendimientos y regalos en San Luis.">
+  <meta property="og:site_name" content="Estudio Violeta">
   <meta property="og:url" content="https://estudio-violeta.netlify.app/">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
   <meta property="og:image" content="https://estudio-violeta.netlify.app/assets/centro-mesa-grande.webp">
   <meta property="og:image:alt" content="Centro de mesa personalizado realizado por Estudio Violeta">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://estudio-violeta.netlify.app/assets/centro-mesa-grande.webp">
   <link rel="canonical" href="https://estudio-violeta.netlify.app/">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -31,24 +36,26 @@
     "url": "https://estudio-violeta.netlify.app/",
     "logo": "https://estudio-violeta.netlify.app/assets/logo-estudio-violeta.png",
     "image": "https://estudio-violeta.netlify.app/assets/centro-mesa-grande.webp",
-    "address": [
-      {
+    "address": {
         "@type": "PostalAddress",
         "streetAddress": "Caseros 955",
         "addressLocality": "San Luis",
         "addressRegion": "San Luis",
         "addressCountry": "AR"
-      },
-      {
+    },
+    "telephone": "+54 9 266 506-4431",
+    "areaServed": ["San Luis", "La Punta"],
+    "location": {
+      "@type": "Place",
+      "name": "Punto de atención en La Punta (coordinar previamente)",
+      "address": {
         "@type": "PostalAddress",
         "streetAddress": "Barrio Pozo del Carril, casa 18",
         "addressLocality": "La Punta",
         "addressRegion": "San Luis",
         "addressCountry": "AR"
       }
-    ],
-    "telephone": "+54 9 266 506-4431",
-    "areaServed": ["San Luis", "La Punta"],
+    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -69,7 +76,7 @@
         <img class="brand-logo" src="assets/logo-estudio-violeta.png" width="512" height="512" alt="">
         <span>Estudio Violeta</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú" data-nav-toggle>
         <span class="sr-only">Abrir menú</span>
         <span></span><span></span><span></span>
       </button>
@@ -125,7 +132,7 @@
 
     <section class="trust-strip" aria-label="Por qué elegir Estudio Violeta">
       <div class="shell trust-grid">
-        <p><strong>49</strong><span>productos publicados</span></p>
+        <p><strong>Catálogo</strong><span>productos publicados online</span></p>
         <p><strong>50%</strong><span>de seña para comenzar</span></p>
         <p><strong>2</strong><span>puntos en San Luis y La Punta</span></p>
         <p><strong>5</strong><span>formas de pago disponibles</span></p>
@@ -157,7 +164,7 @@
             <div class="card-icon" aria-hidden="true">◇</div>
             <h3>Eventos</h3>
             <p>Piezas coordinadas para acompañar momentos importantes con una identidad cuidada.</p>
-            <ul><li>Souvenirs</li><li>Carteles y libros de firmas</li><li>Ramos y tiras de fotos</li></ul>
+            <ul><li>Souvenirs</li><li>Carteles y libros de firmas</li><li>Centros de mesa y decoración</li></ul>
             <a href="#contacto" data-interest="un evento">Tengo un evento <span aria-hidden="true">→</span></a>
           </article>
           <article class="occasion-card occasion-brands reveal">
@@ -173,7 +180,7 @@
             <div class="card-icon" aria-hidden="true">♥</div>
             <h3>Regalos</h3>
             <p>Fotos, nombres y recuerdos convertidos en objetos pensados para una persona en particular.</p>
-            <ul><li>Llaveros y rompecabezas</li><li>Álbumes y fotos impresas</li><li>Calendarios personalizados</li></ul>
+            <ul><li>Llaveros y rompecabezas</li><li>Fotos impresas y libros personalizados</li><li>Calendarios personalizados</li></ul>
             <a href="#contacto" data-interest="un regalo personalizado">Tengo una idea de regalo <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -207,7 +214,7 @@
           </figure>
         </div>
         <div class="portfolio-link reveal">
-          <p>¿Querés ver productos publicados?</p>
+          <p>¿Querés ver productos publicados y consultar disponibilidad?</p>
           <a class="text-link" href="https://compre.sanluis.gov.ar/empresa/estudiovioleta" target="_blank" rel="noopener">Visitar tienda en Compre San Luis <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -249,9 +256,14 @@
       <div class="shell practical-grid">
         <div class="practical-card reveal">
           <span class="tape tape-mint">También en el estudio</span>
-          <h2>Soluciones de impresión para todos los días.</h2>
-          <p>Además de los trabajos personalizados, podés consultar por servicios prácticos de impresión y terminación.</p>
+          <h2>Impresión, anillado y plastificado.</h2>
+          <p>Además de los trabajos personalizados, podés consultar por servicios prácticos de impresión y terminación. Cantidades, disponibilidad y tiempos se coordinan según cada pedido.</p>
           <ul class="check-list"><li>Fotocopias</li><li>Anillados</li><li>Plastificados</li><li>Fotos impresas</li></ul>
+          <a class="text-link" href="https://compre.sanluis.gov.ar/empresa/estudiovioleta" target="_blank" rel="noopener">Ver productos publicados <span aria-hidden="true">↗</span></a>
+          <div class="conditions-note">
+            <strong>Para tener en cuenta</strong>
+            <p>Se solicita una seña del 50% para iniciar el trabajo. Aceptamos efectivo, transferencias, GoCuotas y tarjetas. Los pedidos terminados se retiran dentro de los 10 días; después se aplica un recargo diario.</p>
+          </div>
         </div>
         <div class="faq" id="preguntas">
           <div class="faq-heading reveal"><p class="eyebrow">Antes de escribirnos</p><h2>Preguntas frecuentes</h2></div>
@@ -285,8 +297,8 @@
         </div>
         <address class="contact-card reveal">
           <p class="contact-label">Encontranos / escribinos</p>
-          <div class="contact-row"><span aria-hidden="true">1</span><div><small>San Luis capital</small><strong>Caseros 955</strong></div></div>
-          <div class="contact-row"><span aria-hidden="true">2</span><div><small>La Punta · coordinar previamente</small><strong>Barrio Pozo del Carril, casa 18</strong></div></div>
+          <div class="contact-row"><span aria-hidden="true">1</span><div><small>San Luis capital</small><strong>Caseros 955</strong><a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=Caseros+955%2C+San+Luis%2C+Argentina" target="_blank" rel="noopener">Buscar en Google Maps ↗</a></div></div>
+          <div class="contact-row"><span aria-hidden="true">2</span><div><small>La Punta · coordinar previamente</small><strong class="contact-address-la-punta">Barrio Pozo del Carril, casa 18</strong><a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=Barrio+Pozo+del+Carril+casa+18%2C+La+Punta%2C+San+Luis%2C+Argentina" target="_blank" rel="noopener">Buscar en Google Maps ↗</a></div></div>
           <div class="contact-row"><span aria-hidden="true">↗</span><div><small>WhatsApp</small><a href="https://wa.me/5492665064431" target="_blank" rel="noopener">+54 9 266 506-4431</a></div></div>
           <div class="contact-row"><span aria-hidden="true">@</span><div><small>Instagram</small><a href="https://www.instagram.com/estudio.violeta_/" target="_blank" rel="noopener">@estudio.violeta_</a></div></div>
           <div class="contact-row"><span aria-hidden="true">◷</span><div><small>Horarios</small><strong>Lunes a viernes · 09:30 a 17:30</strong><p>Sábados, domingos y feriados cerrado</p></div></div>
@@ -299,7 +311,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div><a class="brand brand-footer" href="#inicio"><img class="brand-logo" src="assets/logo-estudio-violeta.png" width="512" height="512" alt=""><span>Estudio Violeta</span></a><p>Papelería personalizada, souvenirs e impresión en San Luis.</p></div>
-      <div class="footer-links"><a href="#ocasiones">Qué hacemos</a><a href="#proceso">Cómo pedir</a><a href="https://compre.sanluis.gov.ar/empresa/estudiovioleta" target="_blank" rel="noopener">Tienda online ↗</a></div>
+      <div class="footer-links"><a href="#ocasiones">¿Qué hacemos?</a><a href="#proceso">¿Cómo pedir?</a><a href="https://compre.sanluis.gov.ar/empresa/estudiovioleta" target="_blank" rel="noopener">Tienda online ↗</a></div>
       <div class="footer-meta"><p>Caseros 955 · San Luis</p><p>Pozo del Carril, casa 18 · La Punta</p><p><a href="tel:+542665064431">266 506-4431</a></p><p>© <span data-year></span> Estudio Violeta</p></div>
     </div>
   </footer>
